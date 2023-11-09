@@ -45,16 +45,19 @@ console.log('suma ===', suma);
 // parasyti funkcija kuri spausdina skaicius nuo 0 iki 10
 // jei sk lygus 7 norim nutraukti funkcijo vykdyma
 
-function printNums() {
+function printNums(howMuch) {
   for (let i = 0; i < 11; i++) {
     console.log('i ===', i);
-    if (i === 7) {
+    if (i === howMuch) {
       // break;
+      console.log('======= the end');
       return;
     }
   }
 }
-// printNums();
+printNums(4);
+printNums(5);
+printNums(3);
 
 function printOnlyPositives(num1) {
   // exit clause
@@ -64,6 +67,6 @@ function printOnlyPositives(num1) {
 
   console.log(`${num1} is a positive number`);
 }
-printOnlyPositives(5);
-printOnlyPositives(-15);
-printOnlyPositives('asd');
+// printOnlyPositives(5);
+// printOnlyPositives(-15);
+// printOnlyPositives('asd');
